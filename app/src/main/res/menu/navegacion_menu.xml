@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/casa1"
+        android:title="INICIO" />
+    <item
+        android:id="@+id/nav_juegoRapido"
+        android:icon="@drawable/megusta1"
+        android:title="JUEGO RAPIDO" />
+    <item
+        android:id="@+id/nav_comoJugar"
+        android:icon="@drawable/configuraciones1"
+        android:title="COMO JUGAR" />
+</menu>
+
+<!--Color Azul: #7C7FFF-->
+    <!--Color amarillo: #F3FF1B-->
+
+<!--<a href="https://www.flaticon.es/iconos-gratis/casa" title="casa iconos">Casa iconos creados por Dave Gandy - Flaticon</a>-->
+    <!--<a href="https://www.flaticon.es/iconos-gratis/corazon" title="corazón iconos">Corazón iconos creados por Freepik - Flaticon</a>-->
+<!--<a href="https://www.flaticon.es/iconos-gratis/ajustes" title="ajustes iconos">Ajustes iconos creados por dmitri13 - Flaticon</a>-->

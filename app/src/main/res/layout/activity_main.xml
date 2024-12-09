@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondohojas0"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/permanentmarkerregular"
+        android:layout_marginTop="20dp"
+        android:text="Dale al coco!"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:contentDescription="Imagen principal"
+        android:background="@drawable/cocosito1"/>
+
+    <Button
+        android:id="@+id/buttonComoJugar"
+        android:onClick="comoJugar"
+        android:layout_marginVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppinsmedium"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:backgroundTint="#00BCD4"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/black"
+        android:text="COMO JUGAR" />
+    <Button
+        android:id="@+id/buttonJugar"
+        android:onClick="jugar"
+        android:layout_marginVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppinsmedium"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:backgroundTint="#83BF40"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/black"
+        android:text="JUGAR" />
+    <Button
+        android:id="@+id/buttonSalir"
+        android:onClick="salir"
+        android:layout_marginVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppinsmedium"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:backgroundTint="#FFC107"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/black"
+        android:text="SALIR" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#000000"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/navegacion_menu" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout principal, usando LinearLayout para organizar los elementos de manera vertical -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondohojas0"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Título de la pantalla, centrado y con un texto grande -->
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:fontFamily="@font/permanentmarkerregular"
+    android:layout_marginTop="20dp"
+    android:text="Como Jugar!"
+    android:textAlignment="center"
+    android:textColor="#000000"
+    android:textSize="50sp"
+    android:textStyle="bold" />
+
+    <!-- Imagen principal de la pantalla -->
+    <ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:contentDescription="Imagen principal"
+    android:background="@drawable/cocosito1"/>
+
+    <!-- Contenedor con fondo y bordes redondeados que muestra el texto de instrucciones -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:gravity="center"
+    android:background="@drawable/borderedondeado"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <!-- Texto de instrucciones para el usuario -->
+<TextView
+android:id="@+id/textViewResultados"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:textAlignment="center"
+android:text="Debe de responder 10 preguntas de las siguientes áreas:\n- Cultura General\n- Geografia\n- Artes\n- Ciencia\n Y listo :D\nVersion Beta"
+android:textSize="15sp"
+android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Botón que lleva al menú principal -->
+    <Button
+    android:id="@+id/buttonComoJugar"
+    android:onClick="regresar"
+    android:layout_marginVertical="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginHorizontal="20dp"
+    android:textColor="#FFFFFF"
+    android:fontFamily="@font/poppinsmedium"
+    android:textStyle="bold"
+    android:textSize="23dp"
+    android:backgroundTint="#00BCD4"
+    style="?attr/materialButtonOutlinedStyle"
+    android:strokeColor="@color/black"
+    android:text="MENU" />
+
+    <!-- Contenedor para el Bottom Navigation -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- FrameLayout que se usa para el contenido principal de la aplicación -->
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Barra de navegación inferior con opciones -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#000000"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/navegacion_menu" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
